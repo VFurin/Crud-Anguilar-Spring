@@ -17,7 +17,7 @@ export class CustomersService {
     return this.httpClient.get<Customer[]>(this.API)
     .pipe(
       first(),
-      delay(5000)
+      delay(4000)
     );
   }
 }

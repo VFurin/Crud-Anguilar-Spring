@@ -1,0 +1,14 @@
+.example-full-width {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  padding: 25px;
+  min-width: 150px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  padding-left: 30%;
+}
