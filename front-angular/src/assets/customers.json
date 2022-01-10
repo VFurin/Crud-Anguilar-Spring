@@ -1,4 +1,4 @@
 [
-  { "_id": "1", "name": "Andrea Medeiros", "phone": "11 94587-2536"},
-  { "_id": "2", "name": "Roberta Quino", "phone": "11 98475-5647"}
+  { "_id": "1", "name": "Andrea Medeiros", "phone": "11 94587-2536", "status": "ativo"},
+  { "_id": "2", "name": "Roberta Quino", "phone": "11 98475-5647", "status": "inativo"}
 ]
