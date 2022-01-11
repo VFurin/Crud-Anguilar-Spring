@@ -9,7 +9,7 @@ import { delay, first } from 'rxjs/operators';
 })
 export class CustomersService {
 
-  private readonly API = '/assets/customers.json';
+  private readonly API = 'api/customers';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,4 +21,3 @@ export class CustomersService {
     );
   }
 }
-
