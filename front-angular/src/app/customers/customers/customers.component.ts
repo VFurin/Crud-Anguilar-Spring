@@ -6,6 +6,7 @@ import { catchError } from 'rxjs/operators';
 
 import { Customer } from './../model/customer';
 import { CustomersService } from './../services/customers.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-customers',
@@ -15,12 +16,14 @@ import { CustomersService } from './../services/customers.service';
 export class CustomersComponent implements OnInit {
 
   customers$: Observable<Customer[]>;
-  displayedColumns = ['name', 'phone', 'status'];
+  displayedColumns = ['name', 'phone', 'status', "actions"];
 
   constructor(
     private customersService: CustomersService,
-    public dialog: MatDialog
-    ) {
+    public dialog: MatDialog,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
     this.customers$ = this.customersService.customersList()
     .pipe(
       catchError(error => {
@@ -37,6 +40,10 @@ export class CustomersComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  onAdd(){
+    this.router.navigate(['new'], {relativeTo: this.route});
   }
 
 }
