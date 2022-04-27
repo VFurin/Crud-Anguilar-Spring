@@ -5,6 +5,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -19,7 +20,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   MatFormFieldModule,
   MatDialogModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatProgressBarModule
  ]
 })
 export class AppMaterialModule { }

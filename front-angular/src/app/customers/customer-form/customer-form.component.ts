@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-customer-form',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerFormComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup;
 
+  constructor(private formBuilder: FormBuilder) {
+    this.form = this.formBuilder.group({
+      name:[null],
+      phone: [null],
+      email: [null],
+    });
+   }
   ngOnInit(): void {
+
+  }
+
+  onSubmit(){
+    console.log('Salvar')
+  }
+
+  onCancel(){
+    console.log("Cancelar")
   }
 
 }
