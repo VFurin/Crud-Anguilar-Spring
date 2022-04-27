@@ -25,7 +25,10 @@ public class Customer {
   @Column(length = 20, nullable = false)
   private String phone;
 
-  @Column(length = 30, nullable = false)
-  private String status;
+  @Column(length = 200, nullable = false)
+  private String email;
+
+  @Column(nullable = true)
+  private Boolean status;
 
 }
